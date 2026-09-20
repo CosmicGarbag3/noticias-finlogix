@@ -12,14 +12,23 @@
       overflow: hidden; 
       background: #ffffff; 
     }
-    iframe {
+    #dukascopy-widget-container {
       width: 100%;
       height: 100vh;
-      border: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://freeserv.dukascopy.com/2.0/index.php?action=market-hours&width=100%25&height=100%25"></iframe>
+  <div id="dukascopy-widget-container">
+    <iframe src="https://freeserv.dukascopy.com/2.0/index.php?action=market-hours&lang=en&width=100%25&height=100%25&adv=1" scrolling="no"></iframe>
+  </div>
 </body>
 </html>
