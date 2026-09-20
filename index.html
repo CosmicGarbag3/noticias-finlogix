@@ -1,0 +1,27 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finlogix News</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: transparent; }
+    .finlogix-container { width: 100% !important; height: 100vh !important; }
+  </style>
+</head>
+<body>
+  <!-- Finlogix Widget BEGIN -->
+  <div class="finlogix-container"></div>
+  <script type="text/javascript" src="https://widget.finlogix.com/Widget.js"></script>
+  <script type="text/javascript">
+      Widget.init({
+          widgetId: "d891f28c-de66-4d5a-a774-9d1268c5a95c",
+          type: "NewsFeed",
+          language: "en",
+          isAdaptive: true
+      });
+  </script>
+</body>
+</html>
